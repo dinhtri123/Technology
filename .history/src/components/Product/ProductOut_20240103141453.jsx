@@ -49,7 +49,7 @@ const ProductOut = () => {
       <div className={styles.productOut}>
         <div className={`container ${styles.productOutWrapper}`}>
           <Title
-            src={"../../../public/icon-title05.svg"}
+            src={"/icon-title05.svg"}
             childrenSubtitle={"Sản phẩm"}
             className={styles.productOutTitle}
           >

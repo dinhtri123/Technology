@@ -41,7 +41,7 @@ const Countdown = () => {
           <div className={styles.productFlashSaleInner}>
             <div className={styles.productFlashSaleTop}>
               <span className={styles.productFlashSaleImage}>
-                <img src="../../../public/flashsale.png" alt="" />
+                <img src="/flashsale.png" alt="" />
               </span>
               <div className={styles.countdownTime}>
                 <span>Kết thúc sau {timerDays} ngày</span>

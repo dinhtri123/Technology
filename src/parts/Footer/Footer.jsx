@@ -31,8 +31,8 @@ const Footer = () => {
           </div>
           <div className={styles.footerNewsRight}>
             <div className={styles.footerNewsRightImage}>
-              <img src="../../../public/subscribe-shape-4.png" alt="" />
-              <img src="../../../public/icon-fly.svg" alt="" />
+              <img src="/subscribe-shape-4.png" alt="" />
+              <img src="/icon-fly.svg" alt="" />
               <span>
                 <svg
                   width="399"
@@ -67,7 +67,7 @@ const Footer = () => {
         <div className={styles.footerMainItem}>
           <Link to={"/"}>
             <img
-              src="../../../public/Logo.png"
+              src="/Logo.png"
               width={140}
               height={140}
               alt="Logo Technology"

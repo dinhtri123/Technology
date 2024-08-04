@@ -33,7 +33,7 @@ const NewsHome = () => {
       <div className={styles.newsHome}>
         <div className={`container ${styles.newsHomeWrapper}`}>
           <Title
-            src={"../../../public/icon-title06.svg"}
+            src={"/icon-title06.svg"}
             childrenSubtitle={"Tin tức"}
           >
             Tin tức mới nhất

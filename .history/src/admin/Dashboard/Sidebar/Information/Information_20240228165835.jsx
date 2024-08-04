@@ -12,7 +12,7 @@ const Information = () => {
         <div className={styles.inforWrapper}>
             <div className={styles.inforAvatar}>
                 <span className={styles.avatarImg}>
-                    <img src="../../../../../public/user-2  .png" alt="" />
+                    <img src="../..//user-2  .png" alt="" />
                 </span>
                 <span className={styles.avatarIcon}>
 

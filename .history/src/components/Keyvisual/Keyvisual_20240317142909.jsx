@@ -32,22 +32,22 @@ const Keyvisual = () => {
           className={"mySwiper"}
         >
           <SwiperSlide>
-            <img src="../../../public/banner_1.png" alt="" />
+            <img src="/banner_1.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_2.png" alt="" />
+            <img src="/banner_2.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_3.png" alt="" />
+            <img src="/banner_3.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_4.png" alt="" />
+            <img src="/banner_4.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_5.png" alt="" />
+            <img src="/banner_5.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_6.png" alt="" />
+            <img src="/banner_6.png" alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

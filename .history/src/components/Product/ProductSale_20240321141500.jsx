@@ -32,7 +32,7 @@ const ProductSale = () => {
       <div className={styles.productSale}>
         <div className={`container ${styles.productSaleWrapper}`}>
           <Title
-            src={"../../../public/icon-title04.svg"}
+            src={"/icon-title04.svg"}
             childrenSubtitle={"Deal Hot"}
           >
             Gợi ý hôm nay

@@ -41,7 +41,7 @@ const Countdown = () => {
           <div className={styles.countdownContent}>
             <div className={styles.countdownLeft}>
               <Title
-                src={"../../../public/icon-title03.svg"}
+                src={"/icon-title03.svg"}
                 childrenSubtitle={"Đừng bỏ lỡ!"}
                 className={styles.countdownLeftTitle}
               >
@@ -74,7 +74,7 @@ const Countdown = () => {
               </Link>
             </div>
             <div className={styles.countdownImage}>
-              <img src="../../../public/headphone1.png" alt="headphone" />
+              <img src="/headphone1.png" alt="headphone" />
             </div>
           </div>
         </div>

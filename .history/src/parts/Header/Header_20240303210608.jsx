@@ -127,7 +127,7 @@ const Header = () => {
           <div className={styles.headerLeft}>
             <Link to={"/"} className={styles.headerLogo}>
               <img
-                src="../../../public/Logo.png"
+                src="/Logo.png"
                 width={140}
                 height={140}
                 alt="Logo Technology"

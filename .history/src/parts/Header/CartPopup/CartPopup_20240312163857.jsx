@@ -89,7 +89,7 @@ const CartPopup = () => {
               ))}
             {product.length == 0 && (
               <p>
-                <img src="../../../../public/empty-cart.png" alt="" />
+                <img src="..//empty-cart.png" alt="" />
               </p>
             )}
           </div>

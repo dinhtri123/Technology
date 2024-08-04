@@ -82,7 +82,7 @@ const Sidebar = () => {
               onClick={handleClickAccountUser}
             >
               <span className={styles.userImage}>
-                <img src="../../../../public/user-2 1.png" alt="" />
+                <img src="..//user-2 1.png" alt="" />
               </span>
               <span className={styles.userName}>Đình Trí</span>
               <span className={styles.userIcon}>
@@ -131,7 +131,7 @@ const Sidebar = () => {
               themes.activeSidebar ? styles.activeCollapse : ""
             }`}
           >
-            <img src="../../../../public/Logo.png" alt="" />
+            <img src="..//Logo.png" alt="" />
           </Link>
           <span className={styles.sidebarTopIconMenu}>
             <input

@@ -228,7 +228,7 @@ const ProductDetail = () => {
                     <div className={styles.reviewListItem}>
                       <div className={styles.reviewListItemTop}>
                         <div className={styles.reviewListItemTopThumbnail}>
-                          <img src="../../../public/user-2 1.png" alt="" />
+                          <img src="/user-2 1.png" alt="" />
                         </div>
                         <div className={styles.reviewListItemTopContent}>
                           <div className={styles.reviewListItemTopContentTitle}>
@@ -252,17 +252,17 @@ const ProductDetail = () => {
                       </p>
                       <div className={styles.reviewListItemImage}>
                         <span>
-                          <img src="../../../public/headphone1.png" alt="" />
+                          <img src="/headphone1.png" alt="" />
                         </span>
                         <span>
-                          <img src="../../../public/headphone1.png" alt="" />
+                          <img src="/headphone1.png" alt="" />
                         </span>
                       </div>
                     </div>
                     <div className={styles.reviewListItem}>
                       <div className={styles.reviewListItemTop}>
                         <div className={styles.reviewListItemTopThumbnail}>
-                          <img src="../../../public/user-2 1.png" alt="" />
+                          <img src="/user-2 1.png" alt="" />
                         </div>
                         <div className={styles.reviewListItemTopContent}>
                           <div className={styles.reviewListItemTopContentTitle}>
@@ -286,10 +286,10 @@ const ProductDetail = () => {
                       </p>
                       <div className={styles.reviewListItemImage}>
                         <span>
-                          <img src="../../../public/headphone1.png" alt="" />
+                          <img src="/headphone1.png" alt="" />
                         </span>
                         <span>
-                          <img src="../../../public/headphone1.png" alt="" />
+                          <img src="/headphone1.png" alt="" />
                         </span>
                       </div>
                     </div>
@@ -454,7 +454,7 @@ const ProductDetail = () => {
                       hay túi xách mà không lo chiếm quá nhiều diện tích, bảo vệ
                       tai nghe khỏi bị gãy, vỡ.
                     </p>
-                    <img src="../../../public/headphone1.png" alt="" />
+                    <img src="/headphone1.png" alt="" />
                     <p>
                       Tai nghe Bluetooth Chụp Tai JBL Tune 520BT là dạng tai
                       nghe chụp tai (tai nghe on ear) với diện mạo thời thượng,
@@ -637,7 +637,7 @@ const ProductDetail = () => {
                 </div>
                 <h3>Đánh giá sản phẩm</h3>
                 <div className={styles.popupWriteReviewThumbnail}>
-                  <img src="../../../public/headphone1.png" alt="" />
+                  <img src="/headphone1.png" alt="" />
                 </div>
                 <h4>Tai nghe Bluetooth Chụp Tai Zadez GP-803B</h4>
                 <div className={styles.popupWriteReviewStar}>
@@ -676,7 +676,7 @@ const ProductDetail = () => {
                 </div>
                 <h3>Đánh giá sản phẩm</h3>
                 <div className={styles.popupWriteReviewThumbnail}>
-                  <img src="../../../public/headphone1.png" alt="" />
+                  <img src="/headphone1.png" alt="" />
                 </div>
                 <h4>Tai nghe Bluetooth Chụp Tai Zadez GP-803B</h4>
                 <div className={styles.popupWriteReviewStar}>

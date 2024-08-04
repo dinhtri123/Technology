@@ -57,7 +57,7 @@ const Contact = () => {
             <div className={styles.contactInfor}>
               <div className={styles.contactInforItem}>
                 <div className={styles.contactInforItemImage}>
-                  <img src="../../../public/contact-icon-1.png" alt="" />
+                  <img src="/contact-icon-1.png" alt="" />
                 </div>
                 <a
                   className={styles.contactInforItemEmail}
@@ -74,7 +74,7 @@ const Contact = () => {
               </div>
               <div className={styles.contactInforItem}>
                 <div className={styles.contactInforItemImage}>
-                  <img src="../../../public/contact-icon-2.png" alt="" />
+                  <img src="/contact-icon-2.png" alt="" />
                 </div>
                 <p>
                   Tổ 2, Thôn Tam Hòa, Thị trấn Đông Phú, Huyện Quế Sơn, Tỉnh
@@ -83,7 +83,7 @@ const Contact = () => {
               </div>
               <div className={styles.contactInforItem}>
                 <div className={styles.contactInforItemImage}>
-                  <img src="../../../public/contact-icon-3.png" alt="" />
+                  <img src="/contact-icon-3.png" alt="" />
                 </div>
                 <p>Các trang mạng xã hội</p>
                 <div className={styles.contactInforItemSocial}>

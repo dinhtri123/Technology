@@ -120,7 +120,7 @@ const Header = () => {
       <header>
         <div className={styles.headerTop}>
           <div className={styles.headerTopBanner}>
-            <img src="../../../public/banner_top.gif" alt="" />
+            <img src="/banner_top.gif" alt="" />
           </div>
           <div className={styles.headerTopContent}>
             <div className="container">
@@ -129,7 +129,7 @@ const Header = () => {
                 Liên hệ mua hàng
               </a>
               <Link to={"/tintuc"}>
-                <img src="../../../public/top_news.svg" alt="" />
+                <img src="/top_news.svg" alt="" />
                 Tin công nghệ
               </Link>
             </div>
@@ -140,7 +140,7 @@ const Header = () => {
             <div className={styles.headerLeft}>
               <Link to={"/"} className={styles.headerLogo}>
                 <img
-                  src="../../../public/Logo.png"
+                  src="/Logo.png"
                   width={140}
                   height={140}
                   alt="Logo Technology"

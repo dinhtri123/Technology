@@ -61,7 +61,7 @@ const ProductFlashSale = () => {
       <div className={`container`}>
         <div className={styles.productFlashSaleTop}>
           <span className={styles.productFlashSaleImage}>
-            <img src="../../../public/flashsale.png" alt="" />
+            <img src="/flashsale.png" alt="" />
           </span>
           <div className={styles.countdownTime}>
             <span>

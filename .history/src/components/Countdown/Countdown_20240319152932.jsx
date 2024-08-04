@@ -40,7 +40,7 @@ const Countdown = () => {
         <div className={`container`}>
           <div className={styles.productFlashSaleInner}>
             <span className={styles.productFlashSaleImage}>
-              <img src="../../../public/flashsale.png" alt="" />
+              <img src="/flashsale.png" alt="" />
             </span>
             <div className={styles.countdownTime}>
               <div>

@@ -20,7 +20,7 @@ const Cart = () => {
               <table>
                 <tr>
                   <td className={styles.cartLeftProductImage}>
-                    <img src="../../../public/headphone1.png" alt="" />
+                    <img src="/headphone1.png" alt="" />
                   </td>
                   <td className={styles.cartLeftProductContent}>
                     <h4 className={styles.cartLeftProductTitle}>

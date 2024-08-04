@@ -85,7 +85,7 @@ const Search = ({ activeSearch, handleClickProductSearch }) => {
               </ul>
               {product.length == 0 && theme.keywords !== "" && (
                 <p className={styles.searchResultNotFound}>
-                  <img src="../../../../public/no_product_found.jpg" alt="" />
+                  <img src="..//no_product_found.jpg" alt="" />
                 </p>
               )}
             </div>

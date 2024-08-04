@@ -31,7 +31,7 @@ const Category = () => {
       <div className={styles.category}>
         <div className={`container ${styles.categoryWrapper}`}>
           <Title
-            src={"../../../public/icon-title02.svg"}
+            src={"/icon-title02.svg"}
             childrenSubtitle={"Danh mục"}
           >
             Tất cả danh mục
@@ -65,7 +65,7 @@ const Category = () => {
           >
             <SwiperSlide className={styles.categorySlide}>
               <div className={styles.categorySlideImage}>
-                <img src="../../../public/headphone1.png" alt="" />
+                <img src="/headphone1.png" alt="" />
               </div>
               <div className={styles.categorySlideContent}>
                 <h3 className={styles.categoryTitle}>Laptop</h3>
@@ -74,7 +74,7 @@ const Category = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categorySlide}>
               <div className={styles.categorySlideImage}>
-                <img src="../../../public/headphone1.png" alt="" />
+                <img src="/headphone1.png" alt="" />
               </div>
               <div className={styles.categorySlideContent}>
                 <h3 className={styles.categoryTitle}>Laptop</h3>
@@ -83,7 +83,7 @@ const Category = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categorySlide}>
               <div className={styles.categorySlideImage}>
-                <img src="../../../public/headphone1.png" alt="" />
+                <img src="/headphone1.png" alt="" />
               </div>
               <div className={styles.categorySlideContent}>
                 <h3 className={styles.categoryTitle}>Laptop</h3>
@@ -92,7 +92,7 @@ const Category = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categorySlide}>
               <div className={styles.categorySlideImage}>
-                <img src="../../../public/headphone1.png" alt="" />
+                <img src="/headphone1.png" alt="" />
               </div>
               <div className={styles.categorySlideContent}>
                 <h3 className={styles.categoryTitle}>Laptop</h3>
@@ -101,7 +101,7 @@ const Category = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categorySlide}>
               <div className={styles.categorySlideImage}>
-                <img src="../../../public/headphone1.png" alt="" />
+                <img src="/headphone1.png" alt="" />
               </div>
               <div className={styles.categorySlideContent}>
                 <h3 className={styles.categoryTitle}>Laptop</h3>
@@ -110,7 +110,7 @@ const Category = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categorySlide}>
               <div className={styles.categorySlideImage}>
-                <img src="../../../public/headphone1.png" alt="" />
+                <img src="/headphone1.png" alt="" />
               </div>
               <div className={styles.categorySlideContent}>
                 <h3 className={styles.categoryTitle}>Laptop</h3>
@@ -119,7 +119,7 @@ const Category = () => {
             </SwiperSlide>
             <SwiperSlide className={styles.categorySlide}>
               <div className={styles.categorySlideImage}>
-                <img src="../../../public/headphone1.png" alt="" />
+                <img src="/headphone1.png" alt="" />
               </div>
               <div className={styles.categorySlideContent}>
                 <h3 className={styles.categoryTitle}>Laptop</h3>

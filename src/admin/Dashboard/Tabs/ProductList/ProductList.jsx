@@ -113,7 +113,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>
                   Loa Bluetooth Rezo Pulse E20
@@ -136,7 +136,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>
                   Laptop Legion 5 Pro 512GB
@@ -157,7 +157,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>iPhone 15 Promax</td>
                 <td className={styles.productPrice}>
@@ -176,7 +176,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>Laptop Dell Vostro 15</td>
                 <td className={styles.productPrice}>
@@ -195,7 +195,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>Headphone Asus</td>
                 <td className={styles.productPrice}>
@@ -214,7 +214,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>
                   Loa Bluetooth Rezo Pulse E20
@@ -235,7 +235,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>
                   Laptop Legion 5 Pro 512GB
@@ -256,7 +256,7 @@ const ProductList = () => {
               <tr>
                 <td>LP001</td>
                 <td className={styles.productImage}>
-                  <img src="../../../../../public/headphone1.png" alt="" />
+                  <img src="../..//headphone1.png" alt="" />
                 </td>
                 <td className={styles.productName}>iPhone 15 Promax</td>
                 <td className={styles.productPrice}>

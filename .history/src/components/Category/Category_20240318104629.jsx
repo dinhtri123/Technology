@@ -40,7 +40,7 @@ const Category = () => {
       <div className={styles.category}>
         <div className={`container ${styles.categoryWrapper}`}>
           <Title
-            src={"../../../public/icon-title02.svg"}
+            src={"/icon-title02.svg"}
             childrenSubtitle={"Danh mục"}
           >
             Tất cả danh mục

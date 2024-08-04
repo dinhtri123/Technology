@@ -24,7 +24,7 @@
 .loginWrapper::before {
     content: '';
     position: absolute;
-    background: url('../../../public/img2_login_admin.svg');
+    background: url('/img2_login_admin.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     max-width: 300px;

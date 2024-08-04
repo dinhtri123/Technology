@@ -15,7 +15,7 @@ const Profile = () => {
           <div className={styles.profile}>
             <div className={styles.profileImage}>
               <img
-                src="../../../../public/user-2.png"
+                src="..//user-2.png"
                 width={160}
                 height={160}
                 alt=""

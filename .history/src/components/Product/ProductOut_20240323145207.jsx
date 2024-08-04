@@ -51,10 +51,10 @@ const ProductOut = () => {
         <div className={`container ${styles.productOutWrapper}`}>
         <div className={styles.productOutBanner}>
           <span>
-            <img src="../../../public/banner_out1.png" alt="" />
+            <img src="/banner_out1.png" alt="" />
           </span>
           <span>
-            <img src="../../../public/banner_out2.png" alt="" />
+            <img src="/banner_out2.png" alt="" />
           </span>
         </div>
           <Title

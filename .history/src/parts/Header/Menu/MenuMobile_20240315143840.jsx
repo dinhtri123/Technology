@@ -68,7 +68,7 @@ const MenuMobile = () => {
                     onClick={handleActiveCate}
                   >
                     <span>
-                      <img src="../../../../public/img_cate_1.png" alt="" />
+                      <img src="..//img_cate_1.png" alt="" />
                     </span>
                     Laptop
                   </span>
@@ -79,7 +79,7 @@ const MenuMobile = () => {
                     onClick={handleActiveCate}
                   >
                     <span>
-                      <img src="../../../../public/img_cate_2.png" alt="" />
+                      <img src="..//img_cate_2.png" alt="" />
                     </span>
                     Điện thoại
                   </span>
@@ -90,7 +90,7 @@ const MenuMobile = () => {
                     onClick={handleActiveCate}
                   >
                     <span>
-                      <img src="../../../../public/img_cate_3.png" alt="" />
+                      <img src="..//img_cate_3.png" alt="" />
                     </span>
                     Tai nghe
                   </span>
@@ -101,7 +101,7 @@ const MenuMobile = () => {
                     onClick={handleActiveCate}
                   >
                     <span>
-                      <img src="../../../../public/dongho.png.png" alt="" />
+                      <img src="..//dongho.png.png" alt="" />
                     </span>
                     Đồng hồ
                   </span>
@@ -119,25 +119,25 @@ const MenuMobile = () => {
                           className={`${styles.categoryContentItemListInner} ${styles.brand}`}
                         >
                           <Link>
-                            <img src="../../../../public/macbook.png" alt="" />
+                            <img src="..//macbook.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/acer.png" alt="" />
+                            <img src="..//acer.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/asus.png" alt="" />
+                            <img src="..//asus.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/hp.png" alt="" />
+                            <img src="..//hp.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/lenovo.png" alt="" />
+                            <img src="..//lenovo.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/dell.png" alt="" />
+                            <img src="..//dell.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/msi.png" alt="" />
+                            <img src="..//msi.png" alt="" />
                           </Link>
                         </div>
                       </div>
@@ -162,7 +162,7 @@ const MenuMobile = () => {
                           <Link>
                             <span>
                               <img
-                                src="../../../../public/vanphong.png"
+                                src="..//vanphong.png"
                                 alt=""
                               />
                             </span>
@@ -170,14 +170,14 @@ const MenuMobile = () => {
                           </Link>
                           <Link>
                             <span>
-                              <img src="../../../../public/gaming.png" alt="" />
+                              <img src="..//gaming.png" alt="" />
                             </span>
                             Gaming
                           </Link>
                           <Link>
                             <span>
                               <img
-                                src="../../../../public/mongnhe.png"
+                                src="..//mongnhe.png"
                                 alt=""
                               />
                             </span>
@@ -186,7 +186,7 @@ const MenuMobile = () => {
                           <Link>
                             <span>
                               <img
-                                src="../../../../public/sinhvien.png"
+                                src="..//sinhvien.png"
                                 alt=""
                               />
                             </span>
@@ -194,7 +194,7 @@ const MenuMobile = () => {
                           </Link>
                           <Link>
                             <span>
-                              <img src="../../../../public/camung.png" alt="" />
+                              <img src="..//camung.png" alt="" />
                             </span>
                             Cảm ứng
                           </Link>
@@ -240,22 +240,22 @@ const MenuMobile = () => {
                           className={`${styles.categoryContentItemListInner} ${styles.brand}`}
                         >
                           <Link>
-                            <img src="../../../../public/iphone.png" alt="" />
+                            <img src="..//iphone.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/samsung.png" alt="" />
+                            <img src="..//samsung.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/oneplus.png" alt="" />
+                            <img src="..//oneplus.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/xiaomi.png" alt="" />
+                            <img src="..//xiaomi.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/vivo.png" alt="" />
+                            <img src="..//vivo.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/realme.png" alt="" />
+                            <img src="..//realme.png" alt="" />
                           </Link>
                         </div>
                       </div>
@@ -286,22 +286,22 @@ const MenuMobile = () => {
                           className={`${styles.categoryContentItemListInner} ${styles.brand}`}
                         >
                           <Link>
-                            <img src="../../../../public/jbl.png" alt="" />
+                            <img src="..//jbl.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/monster.png" alt="" />
+                            <img src="..//monster.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/mozard.png" alt="" />
+                            <img src="..//mozard.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/soul.png" alt="" />
+                            <img src="..//soul.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/baseus.png" alt="" />
+                            <img src="..//baseus.png" alt="" />
                           </Link>
                           <Link>
-                            <img src="../../../../public/sony.png" alt="" />
+                            <img src="..//sony.png" alt="" />
                           </Link>
                         </div>
                       </div>

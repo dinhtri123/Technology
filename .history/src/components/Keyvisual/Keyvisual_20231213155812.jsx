@@ -12,7 +12,7 @@ const Keyvisual = () => {
         <div className={`container ${styles.keyvisualWrapper}`}>
           <div className={styles.keyvisualLeft}>
             <Title
-              src={"../../../public/icon-title01.svg"}
+              src={"/icon-title01.svg"}
               className={styles.keyvisualTitle}
               childrenSubtitle={"Deal hot trong tuần này"}
             >
@@ -23,7 +23,7 @@ const Keyvisual = () => {
             </Link>
           </div>
           <div className={styles.keyvisualRight}>
-            <img src="../../../public/headphone1.png" alt="" />
+            <img src="/headphone1.png" alt="" />
           </div>
         </div>
       </div>

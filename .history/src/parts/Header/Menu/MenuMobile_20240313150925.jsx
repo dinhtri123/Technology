@@ -51,7 +51,7 @@ const MenuMobile = () => {
               <div className={styles.categoryList}>
                 <span className={styles.categoryListItem}>
                   <span>
-                    <img src="../../../../public/img_cate_1.jpg" alt="" />
+                    <img src="..//img_cate_1.jpg" alt="" />
                   </span>
                   Laptop
                 </span>

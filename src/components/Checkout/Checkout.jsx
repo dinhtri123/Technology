@@ -89,7 +89,7 @@ const Checkout = () => {
                 ) : (
                   <div className={styles.checkoutProductItem}>
                     <div className={styles.checkoutProductItemImage}>
-                      <img src="../../../public/headphone1.png" alt="" />
+                      <img src="/headphone1.png" alt="" />
                     </div>
                     <div className={styles.checkoutProductItemContent}>
                       <h4>Tai nghe Bluetooth chụp tai Sony WH-CH520</h4>

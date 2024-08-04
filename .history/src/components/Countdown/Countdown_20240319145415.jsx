@@ -40,7 +40,7 @@ const Countdown = () => {
         <div className={`container ${styles.countdownWrapper}`}>
           <div>
             <span>
-              <img src="../../../public/flashsale.gif" alt="" />
+              <img src="/flashsale.gif" alt="" />
             </span>
             <div className={styles.countdownTime}>
               <div>

@@ -36,38 +36,38 @@ const Keyvisual = () => {
           className={"mySwiper"}
         >
           <SwiperSlide>
-            <img src="../../../public/banner_1.png" alt="" />
+            <img src="/banner_1.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_2.png" alt="" />
+            <img src="/banner_2.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_3.png" alt="" />
+            <img src="/banner_3.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_4.png" alt="" />
+            <img src="/banner_4.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_5.png" alt="" />
+            <img src="/banner_5.png" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../../../public/banner_6.png" alt="" />
+            <img src="/banner_6.png" alt="" />
           </SwiperSlide>
         </Swiper>
         {isTablet && (
           <div className="container">
             <div className="keyvisual_list">
               <Link to={"/sanpham"}>
-                <img src="../../../public/banner_item1.png" alt="" />
+                <img src="/banner_item1.png" alt="" />
               </Link>
               <Link to={"/sanpham"}>
-                <img src="../../../public/banner_item2.png" alt="" />
+                <img src="/banner_item2.png" alt="" />
               </Link>
               <Link to={"/sanpham"}>
-                <img src="../../../public/banner_item3.png" alt="" />
+                <img src="/banner_item3.png" alt="" />
               </Link>
               <Link to={"/sanpham"}>
-                <img src="../../../public/banner_item4.png" alt="" />
+                <img src="/banner_item4.png" alt="" />
               </Link>
             </div>
           </div>

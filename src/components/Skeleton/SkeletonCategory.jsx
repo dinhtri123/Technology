@@ -5,7 +5,7 @@ const SkeletonCategory = () => {
       <>
         <div className={styles.categorySlideImage}>
           <img
-            src="../../../public/headphone1.png"
+            src="/headphone1.png"
             width={120}
             height={120}
             alt=""

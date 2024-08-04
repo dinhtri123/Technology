@@ -26,7 +26,7 @@ const Customer = () => {
               <tr>
                 <td>
                   <span className={styles.userImage}>
-                    <img src="../../../../../public/user-2 1.png" alt="" />
+                    <img src="../..//user-2 1.png" alt="" />
                   </span>
                   <span>dinhtri123</span>
                 </td>
@@ -44,7 +44,7 @@ const Customer = () => {
               <tr>
                 <td>
                   <span className={styles.userImage}>
-                    <img src="../../../../../public/user-2 1.png" alt="" />
+                    <img src="../..//user-2 1.png" alt="" />
                   </span>
                   <span>dinhtri123</span>
                 </td>

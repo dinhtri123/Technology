@@ -51,25 +51,25 @@ const MenuMobile = () => {
               <div className={styles.categoryList}>
                 <span className={styles.categoryListItem}>
                   <span>
-                    <img src="../../../../public/img_cate_1.png" alt="" />
+                    <img src="..//img_cate_1.png" alt="" />
                   </span>
                   Laptop
                 </span>
                 <span className={styles.categoryListItem}>
                   <span>
-                    <img src="../../../../public/img_cate_2.png" alt="" />
+                    <img src="..//img_cate_2.png" alt="" />
                   </span>
                   Điện thoại
                 </span>
                 <span className={styles.categoryListItem}>
                   <span>
-                    <img src="../../../../public/img_cate_3.png" alt="" />
+                    <img src="..//img_cate_3.png" alt="" />
                   </span>
                   Tai nghe
                 </span>
                 <span className={styles.categoryListItem}>
                   <span>
-                    <img src="../../../../public/img_cate_4.png" alt="" />
+                    <img src="..//img_cate_4.png" alt="" />
                   </span>
                   Phụ kiện
                 </span>

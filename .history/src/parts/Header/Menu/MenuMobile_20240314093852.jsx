@@ -58,25 +58,25 @@ const MenuMobile = () => {
                     className={`${styles.categoryListItem} ${styles.active}`}
                   >
                     <span>
-                      <img src="../../../../public/img_cate_1.png" alt="" />
+                      <img src="..//img_cate_1.png" alt="" />
                     </span>
                     Laptop
                   </span>
                   <span className={styles.categoryListItem}>
                     <span>
-                      <img src="../../../../public/img_cate_2.png" alt="" />
+                      <img src="..//img_cate_2.png" alt="" />
                     </span>
                     Điện thoại
                   </span>
                   <span className={styles.categoryListItem}>
                     <span>
-                      <img src="../../../../public/img_cate_3.png" alt="" />
+                      <img src="..//img_cate_3.png" alt="" />
                     </span>
                     Tai nghe
                   </span>
                   <span className={styles.categoryListItem}>
                     <span>
-                      <img src="../../../../public/img_cate_4.png" alt="" />
+                      <img src="..//img_cate_4.png" alt="" />
                     </span>
                     Phụ kiện
                   </span>
@@ -93,25 +93,25 @@ const MenuMobile = () => {
                         className={`${styles.categoryContentItemListInner} ${styles.brand}`}
                       >
                         <Link>
-                          <img src="../../../../public/macbook.png" alt="" />
+                          <img src="..//macbook.png" alt="" />
                         </Link>
                         <Link>
-                          <img src="../../../../public/acer.png" alt="" />
+                          <img src="..//acer.png" alt="" />
                         </Link>
                         <Link>
-                          <img src="../../../../public/asus.png" alt="" />
+                          <img src="..//asus.png" alt="" />
                         </Link>
                         <Link>
-                          <img src="../../../../public/hp.png" alt="" />
+                          <img src="..//hp.png" alt="" />
                         </Link>
                         <Link>
-                          <img src="../../../../public/lenovo.png" alt="" />
+                          <img src="..//lenovo.png" alt="" />
                         </Link>
                         <Link>
-                          <img src="../../../../public/dell.png" alt="" />
+                          <img src="..//dell.png" alt="" />
                         </Link>
                         <Link>
-                          <img src="../../../../public/msi.png" alt="" />
+                          <img src="..//msi.png" alt="" />
                         </Link>
                       </div>
                     </div>
@@ -133,31 +133,31 @@ const MenuMobile = () => {
                       >
                         <Link>
                           <span>
-                            <img src="../../../../public/vanphong.png" alt="" />
+                            <img src="..//vanphong.png" alt="" />
                           </span>
                           Văn phòng
                         </Link>
                         <Link>
                           <span>
-                            <img src="../../../../public/gaming.png" alt="" />
+                            <img src="..//gaming.png" alt="" />
                           </span>
                           Gaming
                         </Link>
                         <Link>
                           <span>
-                            <img src="../../../../public/mongnhe.png" alt="" />
+                            <img src="..//mongnhe.png" alt="" />
                           </span>
                           Mỏng nhẹ
                         </Link>
                         <Link>
                           <span>
-                            <img src="../../../../public/sinhvien.png" alt="" />
+                            <img src="..//sinhvien.png" alt="" />
                           </span>
                           Sinh viên
                         </Link>
                         <Link>
                           <span>
-                            <img src="../../../../public/camung.png" alt="" />
+                            <img src="..//camung.png" alt="" />
                           </span>
                           Cảm ứng
                         </Link>
