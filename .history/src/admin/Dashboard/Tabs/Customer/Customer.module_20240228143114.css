@@ -1,0 +1,51 @@
+.customer h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.customerList table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.customerList table tr {
+    min-height: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr 1fr;
+}
+.customerList table thead tr {
+   background-color: var(--bg-primary-02);
+   border-radius: var(--br-radius);
+}
+.customerList table thead tr th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.customerList table thead tr th:first-child {
+    justify-content: flex-start;
+}
+.customerList table tbody {
+    background-color: var(--cl-white);
+}
+.customerList table tbody tr:nth-child(2n) {
+    background-color: var(--cl-gray);
+    border-radius: var(--br-radius);
+}
+.customerList table tbody tr td {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customerList table tbody tr td:first-child {
+    justify-content: flex-start;
+    gap: 5px;
+}
+.userImage {
+    width: 40px;
+    height: 40px;
+}

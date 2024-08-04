@@ -1,0 +1,251 @@
+.inforCartTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    border-bottom: 1px solid var(--cl-gray);
+    padding: 10px;
+    font-size: var(--fz-large);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.08);
+}
+.inforCartTitle span {
+    display: flex;
+}
+.inforCartTitle span:last-child {
+    padding-right: 5px;
+}
+
+.inforCartTitle>span>svg {
+    font-size: var(--fz-large-xl);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.inforCartTitle>span:hover {
+    color: var(--cl-primary)
+}
+
+.inforCartContent {
+    width: 100%;
+    height: calc(100vh - 212px);
+    overflow-y: scroll;
+}
+
+.inforCartProduct {
+    display: flex;
+    gap: var(--gap);
+    padding: 10px;
+    border-bottom: 1px solid var(--cl-gray);
+}
+
+.inforCartProductLeft {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: var(--br-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cl-third);
+    padding: 10px;
+    border: 1px solid var(--cl-gray);
+}
+.inforCartProductLeft img {
+    max-height: 100%;
+    object-fit: contain;
+}
+.inforCartProductLeftIcon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    cursor: pointer;
+    color:hsla(0,0%,4%,.2);
+}
+
+.inforCartProductLeftIcon svg {
+    transition: var(--transition)
+}
+
+.inforCartProductLeftIcon:hover {
+    background-color: var(--cl-primary);
+    border-color: var(--cl-primary);
+}
+
+.inforCartProductLeftIcon:hover>svg {
+    color: var(--cl-white)
+}
+
+
+.inforCartProductRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.inforCartProductTitle>h4 {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: var(--fz-normal);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    padding-right: 25px;
+}
+
+.inforCartProductTitle>p {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: var(--fz-base);
+    color: var(--cl-text);
+    display: flex;
+    gap: 5px;
+}
+
+.inforCartProductPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.inforCartProductPrice > span > p:first-child {
+    font-weight: 600;
+    font-size: var(--fz-large);
+}
+.inforCartProductPrice > span > p:last-child {
+    font-size: var(--fz-base);
+    text-decoration: line-through;
+    color: var(--cl-text);
+    font-weight: 500;
+}
+
+.inforCartProductQuantity {
+    display: flex;
+    background-color: var(--cl-third);
+    border-radius: 6px;
+    width: 85px;
+    height: 35px;
+}
+
+.inforCartProductQuantity>input {
+    width: 25px;
+    text-align: center;
+    height: inherit;
+    color: var(--cl-black);
+    font-size: initial;
+}
+
+.inforCartProductQuantity>span {
+    width: 30px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.inforCartProductQuantity>span>svg {
+    font-size: var(--fz-base);
+}
+
+.inforCartSumary {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    border-top: 1px solid var(--cl-gray);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-x);
+    width: 100%;
+    box-shadow: var(--box-shadow-top);
+}
+
+.inforCartTotal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.inforCartTotal h4 {
+    font-weight: 400;
+    font-size: var(--fz-normal);
+}
+
+.inforCartTotal p {
+    font-size: 20px;
+    color: var(--cl-blue);
+    font-weight: 700;
+}
+.emptyCart {
+    display: flex;
+    justify-content: center;
+}
+.emptyCart img {
+    width: 50%;
+}
+@media screen and (min-width: 769px) {
+    .inforCartTotal {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .inforCartTotalMoney {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--gap);
+        align-items: center;
+        width: 100%;
+    }
+    .inforCartTotalMoney p{
+        color: var(--cl-black);
+        font-weight: 500;
+        font-size: var(--fz-large);
+    }
+    .inforCartTotalMoney p:last-child {
+        font-weight: 600;
+    }
+    .inforCartTotalAction {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .headerRightInforItemText {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .inforCartProduct {
+        gap: var(--gap-x);
+    }
+    .inforCartProductQuantity {
+        height: 30px;
+        width: auto;
+    }
+
+    .inforCartProductQuantity>span {
+        width: 25px;
+    }
+
+    .inforCartProductQuantity>input {
+        font-size: inherit;
+    }
+
+    .inforCartProductQuantity>span>svg {
+        font-size: var(--fz-small);
+    }
+    .inforCartTitle {
+        height: 60px;
+    }
+    .inforCartProductTitle > p {
+        margin-bottom: 2px;
+    }
+}

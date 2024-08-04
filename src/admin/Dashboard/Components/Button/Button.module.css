@@ -1,0 +1,9 @@
+.buttonAddCommon {
+    padding: 10px 30px;
+    border-radius: var(--br-radius);
+    background: var(--cl-primary);
+    color: var(--cl-white);
+    margin: 10px auto;
+    width: fit-content;
+    cursor: pointer;
+}

@@ -1,0 +1,154 @@
+.countdown {
+    padding-top: 160px
+}
+
+.countdownContent {
+    background-color: var(--cl-third);
+    border-radius: var(--br-radius);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-xl);
+    padding: 40px;
+    position: relative;
+}
+
+.countdownLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-xl);
+    z-index: 1;
+}
+
+.countdownTime {
+    display: flex;
+    gap: var(--gap-x);
+    align-items: center;
+}
+
+.countdownTime div {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: var(--cl-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+
+}
+
+
+.countdownTime div>span:first-child {
+    font-weight: 700;
+    color: var(--cl-white);
+    font-size: var(--fz-large-xl);
+}
+
+.countdownTime div>span:last-child {
+    font-size: var(--fz-base);
+    color: var(--cl-white);
+}
+
+.countdownImage {
+    position: relative;
+}
+
+.countdownImage img {
+    width: 100%;
+    animation: updown 4s ease-in-out infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-10px) scale(0.9);
+        ;
+    }
+
+    25% {
+        transform: translateY(0px) scale(0.9);
+        ;
+
+    }
+
+    50% {
+        transform: translateY(-10px) scale(0.9);
+        ;
+
+    }
+
+    75% {
+        transform: translateY(0px) scale(0.9);
+        ;
+
+    }
+
+    100% {
+        transform: translateY(-10px) scale(0.9);
+        ;
+    }
+
+}
+
+.countdownLeftTitle h2 {
+    font-size: var(--fz-xxl);
+}
+
+@media screen and (min-width: 1204px) {
+    .countdownImage img {
+        position: absolute;
+        bottom: -30px;
+        right: 0px;
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    .countdownLeftTitle h2 {
+        font-size: var(--fz-xl)
+    }
+
+    .countdownImage img {
+        bottom: 0px;
+    }
+
+    .countdown {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .countdownImage img {
+        transform: scale(1);
+    }
+
+
+
+    .countdownImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .countdownContent {
+        padding: 20px;
+    }
+
+    .countdownTime>div {
+        width: 60px;
+        height: 60px;
+        gap: 0px;
+    }
+
+    .countdownTime>div>span,
+    .countdownTime div>span:first-child {
+        font-size: var(--fz-large)
+    }
+}

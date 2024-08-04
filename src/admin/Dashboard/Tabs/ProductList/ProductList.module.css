@@ -1,0 +1,169 @@
+.productList h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.productListAction {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0px;
+}
+.actionSearch {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+    border-radius: var(--br-radius);
+    background-color: var(--cl-white);
+    border: 1px solid #eee;
+    outline: none;
+    padding: 4px 15px 4px 55px;
+    overflow: hidden;
+}
+.actionSearch input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: var(--fz-normal);
+}
+.actionSearch input::placeholder {
+    font-size: var(--fz-base);
+}
+.actionSearchIcon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cl-text);
+    cursor: pointer;
+}
+.actionSearchIcon::before {
+    content: '';
+    position: absolute;
+    top:50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 1.5px;
+    height: 70%;
+    background-color: var(--cl-black);
+}
+.actionSort {
+    position: relative;
+}
+.actionSortActive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px 20px;
+    height: 40px;
+    background: var(--cl-white);
+    font-weight: 500;
+    border-radius: var(--br-radius);
+    cursor: pointer;
+    user-select: none;
+}
+.actionSortActive svg {
+    font-size: var(--fz-normal);
+}
+.actionSortList {
+    display: flex;
+    flex-direction: column;
+    background: var(--cl-white);
+    position: absolute;
+    top: 120%;
+    right: 0px;
+    width: max-content;
+    border-radius: var(--br-radius);
+    min-width: 240px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: var(--transition);
+}
+.actionSortList span {
+    padding: 10px 20px;
+    display: block;
+    cursor: pointer;
+}
+.activeSort, .actionSortList span:hover {
+    background: var(--cl-primary);
+    color: var(--cl-white);
+}
+.productListTable {
+    padding: 20px 0px;
+}
+.productListTable table{
+    width: 100%;
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+}
+.productListTable table thead tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr 1fr 1fr;
+    border-radius: var(--br-radius);
+    overflow: hidden;
+}
+.productListTable table thead th {
+    font-weight: 600;
+    background-color: var(--bg-primary-02);
+    padding: 10px;
+    color: var(--cl-primary);
+}
+.productListTable table tbody tr {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr 1fr 1fr;
+    border-radius: var(--br-radius);
+    overflow: hidden;
+    border-bottom: 1px solid var(--cl-gray);
+}
+.productListTable table tbody tr td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 500;
+}
+.productListTable table tbody tr td svg {
+    font-size: var(--fz-large-xl);
+}
+.productListTable table tbody tr:nth-child(2n) {
+    background-color: var(--cl-third);
+}
+.productImage img {
+    max-width: 100%;
+    width: 80px;
+}
+.productName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+}
+.productAdd span, .productEdit span, .productDelete span{
+    padding: 8px 15px;
+    border-radius: var(--br-radius);
+    color: var(--cl-white);
+    cursor: pointer;
+    font-size: var(--fz-base);
+}
+.productAdd span {
+    background: var(--cl-primary);
+}
+.productEdit span {
+    background: #FFE331;
+}
+.productDelete span {
+    background-color:  var(--cl-secondary);
+}

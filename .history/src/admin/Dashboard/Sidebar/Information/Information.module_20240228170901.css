@@ -1,0 +1,36 @@
+.information h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.inforWrapper {
+    margin-top: 20px;
+}
+.inforAvatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0px auto;
+    position: relative;
+}
+.avatarIcon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--cl-white);
+    border-radius: 50%;
+    background-color: var(--cl-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cl-white);
+    cursor: pointer;
+}
+.inforContent {
+    max-width: 500px;
+    margin: 20px auto 0px;
+}

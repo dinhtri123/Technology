@@ -1,0 +1,32 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.title h2 {
+    font-size: var(--fz-large-xl);
+}
+.subTitle {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+    color: var(--cl-secondary);
+    font-weight: 600;
+}
+.titleIcon {
+    width: 20px;
+    height: 20px;
+    background: var(--cl-secondary);
+    border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+    .title h2 {
+        font-size: var(--fz-large-x)
+    }
+    .subTitle {
+        font-size: var(--fz-base)
+    }
+    .subTitle img {
+        width: 20px;
+    }
+}

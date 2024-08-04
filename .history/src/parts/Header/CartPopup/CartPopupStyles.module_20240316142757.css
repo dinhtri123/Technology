@@ -1,0 +1,224 @@
+.inforCartTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    border-bottom: 1px solid var(--cl-gray);
+    padding: 10px;
+    font-size: var(--fz-large);
+}
+.inforCartTitle span {
+    display: flex;
+}
+
+.inforCartTitle>span>svg {
+    font-size: var(--fz-large-xl);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.inforCartTitle>span:hover {
+    color: var(--cl-primary)
+}
+
+.inforCartContent {
+    width: 100%;
+    height: calc(100vh - 212px);
+    overflow-y: scroll;
+    padding: 0px 10px;
+    margin: 0px -10px;
+}
+
+.inforCartProduct {
+    display: flex;
+    gap: var(--gap);
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--cl-gray);
+}
+
+.inforCartProductLeft {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: var(--br-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cl-third);
+}
+
+.inforCartProductLeftIcon {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: 1px solid var(--cl-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cl-white);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.inforCartProductLeftIcon svg {
+    transition: var(--transition)
+}
+
+.inforCartProductLeftIcon:hover {
+    background-color: var(--cl-primary);
+    border-color: var(--cl-primary);
+}
+
+.inforCartProductLeftIcon:hover>svg {
+    color: var(--cl-white)
+}
+
+
+.inforCartProductRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inforCartProductTitle>h4 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: var(--fz-normal);
+    display: -webkit-box;
+    line-clamp: 3;
+}
+
+.inforCartProductTitle>p {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: var(--fz-base);
+    color: var(--cl-text);
+    display: flex;
+    gap: 5px;
+}
+
+.inforCartProductPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.inforCartProductPrice>p {
+    font-weight: 600;
+    color: var(--cl-primary)
+}
+
+.inforCartProductQuantity {
+    display: flex;
+    background-color: var(--cl-third);
+    border-radius: 6px;
+    width: 85px;
+    height: 35px;
+}
+
+.inforCartProductQuantity>input {
+    width: 25px;
+    text-align: center;
+    height: inherit;
+    color: var(--cl-black);
+    font-size: initial;
+}
+
+.inforCartProductQuantity>span {
+    width: 30px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.inforCartProductQuantity>span>svg {
+    font-size: var(--fz-base);
+}
+
+.inforCartSumary {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px;
+    border-top: 1px solid var(--cl-gray);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-x);
+    width: 100%;
+}
+
+.inforCartTotal {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.inforCartTotal h4 {
+    font-weight: 400;
+    font-size: var(--fz-normal);
+}
+
+.inforCartTotal p {
+    font-size: var(--fz-large);
+    color: var(--cl-primary);
+    font-weight: 600;
+}
+.emptyCart {
+    display: flex;
+    justify-content: center;
+}
+.emptyCart img {
+    width: 50%;
+}
+@media screen and (max-width: 1023.89px) {
+    .headerRightInforItemText {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .inforCartSumary {
+        padding: 10px;
+    }
+
+
+
+    .inforCartProductLeftIcon {
+        top: -8px;
+        left: -8px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .inforCartProductQuantity {
+        height: 30px;
+        width: auto;
+    }
+
+    .inforCartProductQuantity>span {
+        width: 25px;
+    }
+
+    .inforCartProductQuantity>input {
+        font-size: inherit;
+    }
+
+    .inforCartProductQuantity>span>svg {
+        font-size: var(--fz-small);
+    }
+    .inforCartTitle {
+        height: 60px;
+    }
+    .inforCartProduct {
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,68 @@
+.dropdown {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.dropdown h3 {
+    font-weight: 500;
+}
+.dropdownContent {
+    background-color: var(--cl-white);
+    min-width: 240px;
+    height: 40px;
+    border-radius: var(--br-radius);
+    height: 100%;
+    box-shadow: 0px 0px 10px var(--cl-third);
+    position: relative;
+}
+.dropdownActive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 15px;
+
+}
+.dropdownActive svg {
+    font-size: var(--fz-large);
+}
+.dropdownActive span:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    transition: var(--transition);
+}
+.dropdownActive span.active {
+    transform: rotate(0deg);
+}
+.dropdownList {
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    width: max-content;
+    min-width: 240px;
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+    box-shadow: 0px 5px 10px var(--cl-third);
+    list-style: none;
+    overflow: hidden;
+    max-height: 0px;
+    transition: var(--transition);
+    z-index: 10;
+}
+.dropdownList li {
+    padding: 12px 20px;
+    transition: var(--transition);
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.dropdownList li.active, .dropdownList li:hover {
+    background-color:var(--cl-primary);
+    color: var(--cl-white);
+
+}

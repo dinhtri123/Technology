@@ -1,0 +1,23 @@
+.addAttrCommon h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.addCate .addAttrCommonContent {
+    display: flex;
+    gap: var(--gap);
+    margin: 0px auto;
+    width: fit-content;
+}
+.addCate .addAttrCommonContent div:last-child {
+    flex-shrink: 0;
+}
+.addAttrForm {
+    display: flex;
+    flex-direction: column;
+}
+.addAttrForm >  div:last-child {
+    margin-top: 0px;
+}

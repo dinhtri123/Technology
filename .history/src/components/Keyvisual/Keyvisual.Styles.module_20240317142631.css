@@ -1,0 +1,10 @@
+.keyvisual {
+    max-height: 600px;
+    height: 100%;
+}
+.keyvisual .mySwiper {
+    height: 600px;
+}
+.keyvisual .mySwiper img {
+    height: 100%;
+}

@@ -1,0 +1,229 @@
+.productAdd h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.attrCommon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-x) var(--gap-xl);
+    padding: 20px 0px;
+}
+.attrCommonItem {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.attrCommonItemRadio {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-x);
+}
+.attrCommonItemRadio span {
+    display: flex;
+    gap: var(--gap-sm);
+    align-items: center;
+}
+.attrCommonItemRadio span label {
+    cursor: pointer;
+}
+.attrCommonItemRadio span input {
+    width: 15px;
+    height: 15px;
+}
+
+
+.paramsItem {
+    margin: 5px auto;
+    max-width: calc(100% - 40px);
+
+}
+.paramsAttr {
+    background-color: var(--cl-white);
+    margin: 5px 0px;
+    border-radius: var(--br-radius);
+    display: none;
+}
+.paramsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+
+}
+.paramsListItem {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-x);
+}
+.paramsListItem label {
+    min-width: 130px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.paramsListItem input {
+    background-color: var(--cl-third);
+    height: 40px;
+    border-radius: var(--br-radius);
+    flex: 1;
+    width: 100%;
+    padding: 5px 15px;
+    font-size: var(--fz-normal);
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+.paramsListItem input:focus {
+    border: 2px solid var(--cl-text)
+}
+.paramsAttrAddPopup.active {
+    display: flex;
+}
+.popupAddAttr {
+    padding: 10px 0px;
+    display: flex;
+    gap: var(--gap);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.popupAddAttr h6 {
+    font-size: var(--fz-normal);
+    font-weight: 600;
+    min-width: 135px;
+}
+.popupAddAttrWrapper {
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+.popupAddAttrActive {
+    background-color: var(--cl-white);
+    border: 1px solid var(--cl-text);
+    border-radius: var(--br-radius);
+    padding: 5px 10px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-x);
+    cursor: pointer;
+    min-width: 160px;
+}
+.popupAddAttrActive span:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    transition: var(--transition);
+}
+.popupAddAttrActive span.active {
+    transform: rotate(0deg);
+}
+.popupAddAttrActive span:last-child svg {
+    font-size: var(--fz-large);
+}
+.popupAddAttrList {
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+    width: max-content;
+    overflow: hidden;
+    max-height: 0px;
+    transition: var(--transition);
+}
+.popupAddAttrList span {
+    display: block;
+    padding: 10px 20px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.popupAddAttrList span.active, .popupAddAttrList span:hover {
+    background-color: var(--cl-primary);
+    color: var(--cl-white);
+}
+.popupAddAttrSend {
+    padding: 10px 30px;
+    border-radius: var(--br-radius);
+    outline: none;
+    color: var(--cl-white);
+    font-size: var(--fz-normal);
+    background-color: var(--cl-primary);
+    margin: 0px auto;
+    cursor: pointer;
+}
+.paramsCommon {
+    margin-bottom: 10px;
+}
+.paramsCommonAdd, .paramsCommonListAddOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paramsCommonShowContent {
+    background-color: var(--cl-white);
+    margin: 5px 0px;
+    padding: 0px 20px;
+}
+.paramsCommonShow {
+    padding: 10px 0px;
+}
+
+.titleCommon {
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: var(--fz-large);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+    cursor: pointer;
+}
+.titleCommon span:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    transition: var(--transition)
+}
+.titleCommon span:last-child.active {
+    transform: rotate(0deg);
+}
+.paramsCommonOption .paramsList {
+    grid-template-columns: 2fr 2fr 2fr 2fr 1.5fr;
+    gap: 0px;
+}
+.paramsCommonOption .paramsList .paramsListItem label {
+    min-width: fit-content;
+}
+.paramsListWrapper {
+    display: none;
+}
+.addetailInfor, .descShort {
+    margin-bottom: 10px;
+}
+.descShortText {
+    margin: 5px 0px;
+    width: 100%;
+    border: 2px solid var(--bg-input);
+    border-radius: var(--br-radius);
+    font-family: inherit;
+    padding: 15px;
+    font-size: var(--fz-normal);
+    max-height: 160px;
+    display: none;
+}
+.addetailInforEditor {
+    margin: 5px 0px;
+    display: none;
+}

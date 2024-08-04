@@ -1,0 +1,20 @@
+.customer h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.customerList table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.customerList table tr {
+    min-height: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr 1fr;
+}
+.customerList table thead tr {
+   background-color: var(--bg-primary-02);
+}

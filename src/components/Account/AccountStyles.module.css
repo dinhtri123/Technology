@@ -1,0 +1,246 @@
+.accountPage {
+    padding-top: var(--pt);
+    padding-bottom: var(--pb)
+}
+.accountPageWrapper {
+    display: flex;
+    gap: var(--gap-xl);
+}
+.accountPageList {
+    max-width: 376px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--br-radius);
+    background-color: var(--cl-third);
+    overflow: hidden;
+}
+.accountPageList li {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-x);
+    padding: 5px 40px;
+    color: var(--cl-text);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.accountPageList li:hover {
+    background-color: rgba(0, 128, 255, 0.2);
+    color: var(--cl-primary)
+}
+.accountPageList li.active {
+    background-color: rgba(0, 128, 255, 0.2);
+    color: var(--cl-primary)
+}
+.accountPageContent {
+    flex: 1;
+    
+}
+/*Profile */
+.profile {
+    display: flex;
+    gap: var(--gap-xl);
+    border: 1px solid var(--cl-gray);
+    border-radius: var(--br-radius);
+    padding: 40px;
+    
+}
+.profileContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-x)
+}
+.profileContentItem {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    font-weight: 500;
+}
+.profileImage {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.profileImage span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--cl-white);
+    border-radius: 50%;
+    background-color: var(--cl-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cl-white);
+    cursor: pointer;
+}
+/*  */
+/* Order */
+.order  {
+    overflow-x: auto;
+}
+.order table {
+    width: 100%;
+    min-width: 600px
+}
+.order table tr{
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--cl-third);
+}
+.order table tr th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 600;
+    border-right: 2px solid var(--cl-white);
+}
+.order table tr th:last-child {
+    border-right: 0px;
+}
+.order table tr:first-child {
+    background-color: var(--cl-third);
+    border-radius: var(--br-radius);
+    border-bottom: 0px;
+}
+.order table tr td {
+    font-weight: 500;
+    text-align: center;
+}
+.order table tr td:nth-child(1) {
+    color: var(--cl-primary)
+}
+.order table tr td:nth-child(4) {
+    color: var(--cl-primary);
+    font-weight: 600;
+}
+.order table tr td:last-child {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--cl-black);
+    margin: 0px auto;
+    padding: 10px 20px;
+    transition: var(--transition);
+}
+.order table tr td:last-child:hover {
+    color: var(--cl-primary);
+}
+.orderStatusProcessing {
+color: var(--cl-yellow);
+}
+.orderStatusComplete {
+    color: var(--cl-green);
+}
+.orderStatusNoProcess {
+    color: var(--cl-purple)
+}
+/*  */
+/* password */
+
+.password {
+    border: 1px solid var(--cl-gray);
+    border-radius: var(--br-radius);
+    padding: 40px;
+}
+.password form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-x);
+    flex-wrap: wrap;
+}
+
+.passwordItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gap);
+    font-weight: 500;
+}
+.passwordItem:first-child {
+    grid-column: 1 / span 2 ;
+}
+
+/* Skeleton Profile */
+.skeletonprofileContentItem div:first-child {
+    width: 120px;
+    height: 20px;
+    border-radius: var(--br-radius-sm);
+}
+.skeletonprofileContentItem div:last-child {
+    width: 100%;
+    height: 40px;
+    border-radius: var(--br-radius-sm);
+}
+.skeletonbtnCustom {
+    width: fit-content;
+    height: 45px;
+    border-radius: var(--br-radius);
+}
+
+/* skeleton My Orders */
+
+.skeletonOrderItem {
+    width: 60%;
+    height: 20px;
+    border-radius: var(--br-radius-sm);
+    margin: 0px auto;
+}
+/* skeleton Change Password */
+.skeletonpassword .skeletonprofileContentItem:first-child {
+    grid-column: 1 / span 2;
+}
+@media screen and (max-width: 1280px) {
+    .accountPageList {
+        max-width: fit-content;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .accountPageList {
+        max-width: 100%;
+    }
+    .accountPageList li {
+        height: 45px;
+        padding: 5px 25px;
+    }
+    .accountPageWrapper{
+        flex-direction: column;
+    }
+    .profile {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .profileContent {
+        gap:  var(--gap-xl)
+    }
+    .profileImage {
+        width: 120px;
+        height: 120px;
+    }
+    .profileImage span {
+        width: 30px;
+        height: 30px;
+        right: 5px;
+    }
+    .password {
+        padding: 20px;
+    }
+    .password form {
+        grid-template-columns: 1fr;
+        gap: var(--gap-xl)
+    }
+    .passwordItem:first-child {
+        grid-column: 1;
+    }
+}

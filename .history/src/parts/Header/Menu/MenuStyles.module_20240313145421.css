@@ -1,0 +1,206 @@
+.headerMenu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerMenuItemCategory {
+    position: relative;
+    cursor: pointer;
+}
+
+.headerMenuItemCategory svg {
+    font-size: 8px;
+}
+
+.headerMenu>li>a,
+.headerMenuItemCategory>span {
+    color: var(--cl-black);
+    padding: 6px 15px;
+    transition: var(--transition);
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.headerMenu>li>a:hover {
+    color: var(--cl-primary)
+}
+
+
+
+.headerMenuChildren>li {
+    width: 100%;
+}
+
+.headerMenuChildren>li>a {
+    padding: 15px 20px;
+    color: var(--cl-black);
+    position: relative;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--cl-gray);
+    transition: var(--transition);
+}
+
+.headerMenuChildren>li:last-child>a {
+    border-bottom: 0px;
+}
+
+.headerMenuChildren>li>a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 90%;
+    background-color: var(--cl-primary);
+    opacity: 0;
+    transition: var(--transition);
+    border-radius: var(--br-radius-x)
+}
+
+.headerMenuChildren>li:hover>a {
+    opacity: 1;
+    color: var(--cl-primary);
+}
+
+.headerMenuChildren>li:hover>a:before {
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 1025px) {
+    nav {
+        display: flex;
+    }
+
+    .navMenuWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerMenuItemCategory:hover .headerMenuItem {
+        color: var(--cl-primary);
+        border: 1px dashed var(--cl-primary);
+        border-radius: var(--br-radius)
+    }
+
+    .headerMenuChildren {
+        position: absolute;
+        top: calc(100% + 15px);
+        left: 0px;
+        width: 200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: var(--br-radius);
+        border: 1px solid var(--cl-gray);
+        overflow: hidden;
+        transition: var(--transition);
+        transform: translateY(10%);
+        opacity: 0;
+        z-index: -10;
+        visibility: hidden;
+        background-color: var(--cl-white);
+    }
+
+    .headerMenuItem:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        height: 20px;
+        background-color: transparent;
+    }
+
+    .headerMenuItemCategory:hover .headerMenuChildren {
+        transform: translateY(0%);
+        opacity: 1;
+        z-index: 10;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+
+    .headerMenu>li>a,
+    .headerMenuItemCategory>span {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* menu sticky */
+    .menuSticky {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        background-color: var(--cl-white);
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.1),0 2px 6px 2px rgba(60,64,67,.15);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        z-index: 100;
+    }
+    .menuStickyItem, .menuStickyItem span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--gap-sm);
+        align-items: center;
+        font-size: var(--fz-base);
+        font-weight: 600;
+        color: var(--cl-text)
+    }
+    .menuStickyItem > svg, .menuStickyItem span > svg {
+        font-size: var(--fz-large-xl);
+    }
+    .menuStickyItem.active, .menuStickyItem.active span {
+        color: #d70018;
+    }
+    .categoryPopupWrapper {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%; 
+        height: 100%;
+        z-index: 10;
+        height: calc(100vh - 60px);
+        background: var(--cl-white);
+        padding-bottom: 70px;
+        z-index: 10;
+    }
+    .categoryPopupWrapperTitle {
+        width: 100%;
+        background: var(--cl-white);
+        
+    }
+    .categoryPopupWrapperTitle h3 {
+        font-weight: 600;
+        position: relative;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .categoryPopupWrapperTitle h3 svg {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .menuTitlepopup {
+        height: 60px;
+        padding: 0px 20px;
+    }
+}

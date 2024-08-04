@@ -1,0 +1,52 @@
+.productFlashSale {
+    padding: 30px 0px;
+}
+
+.countdownTime {
+    display: flex;
+    gap: var(--gap-x);
+    align-items: center;
+}
+
+.countdownTime div {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: var(--cl-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+
+}
+
+
+.countdownTime div>span:first-child {
+    font-weight: 700;
+    color: var(--cl-white);
+    font-size: var(--fz-large-xl);
+}
+
+.countdownTime div>span:last-child {
+    font-size: var(--fz-base);
+    color: var(--cl-white);
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .countdownTime>div {
+        width: 60px;
+        height: 60px;
+        gap: 0px;
+    }
+
+    .countdownTime>div>span,
+    .countdownTime div>span:first-child {
+        font-size: var(--fz-large)
+    }
+}

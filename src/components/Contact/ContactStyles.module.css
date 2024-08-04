@@ -1,0 +1,107 @@
+.contact {
+    padding: var(--pt) 0px;
+}
+.contactWrapper h3 {
+    font-size: var(--fz-large-xxl);
+    text-align: center;
+    margin-bottom: var(--gap-xl);
+    text-transform: uppercase;
+}
+.contactContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--gap-xl);
+    background-color: var(--cl-white);
+    box-shadow: 0px 0px 10px #eee;
+    border-radius: var(--br-radius);
+    padding: var(--gap-xl)
+}
+.contactForm h4{
+    font-size: var(--fz-large-xl);
+    font-weight: 600;
+    margin-bottom: var(--gap);
+}
+.contactForm p{
+    font-weight: 500;
+    margin-bottom: var(--gap-x);
+    color: var(--cl-text);
+    font-size: var(--fz-base);
+}
+.contactFormItem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: var(--gap-x);
+}
+.contactFormItem input {
+    border: 1px solid var(--cl-gray);
+    padding: 5px 20px;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    border-radius: var(--br-radius);
+}
+.contactFormItem textarea {
+    padding: 15px;
+    height: 120px;
+    border-radius: var(--br-radius);
+    font-size: var(--fz-normal);
+    font-family: var(--font-primary);
+    border: 1px solid var(--cl-gray);
+    resize: none;
+}
+.contactInfor {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xl);
+}
+.contactInforItem {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.contactInforItem a, .contactInforItem p {
+    font-weight: 500;
+    color: var(--cl-text);
+}
+.contactInforItemSocial {
+    display: flex;
+    gap: var(--gap)
+}
+.contactInforItemSocial svg {
+    font-size: var(--fz-large-xxl);
+}
+.contactMap {
+    padding-top: var(--pt);
+    width: 100%;
+    height: 700px;
+}
+.contactMap iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: var(--br-radius);
+}
+@media screen and (max-width: 1023px) {
+    .contactInforItem>div {
+            width: 50px;
+        }
+    
+        .contactMap {
+            height: 500px;
+        }
+}
+@media screen and (max-width: 767px) {
+    .contactContent {
+        grid-template-columns: 1fr;
+    }
+    .contactInforItem > div {
+        width: 50px;
+    }
+    .contactMap {
+        height: 400px;
+    }
+    .contactWrapper h3{
+        font-size: var(--fz-large-xl);
+    }
+}

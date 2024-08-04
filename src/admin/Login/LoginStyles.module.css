@@ -1,0 +1,65 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px;
+
+}
+
+.loginWrapper {
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: var(--br-radius);
+}
+
+.loginWrapper::before {
+    content: '';
+    position: absolute;
+    background: url('../../../public/img2_login_admin.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    right: -80%;
+    bottom: -10%;
+}
+.loginWrapper h2 {
+    font-size: var(--fz-large-x);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+}
+.loginWrapper h3 {
+    font-size: var(--fz-large-xl);
+    color: var(--cl-primary);
+    text-align: center;
+    font-weight: 600;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.formForgetPass {
+    color: var(--cl-primary);
+    text-align: right;
+    font-size:var(--fz-base);
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .loginWrapper:before {
+        display: none;
+    }
+}

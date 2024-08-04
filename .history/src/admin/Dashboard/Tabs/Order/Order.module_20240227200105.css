@@ -1,0 +1,212 @@
+.order h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.orderTab {
+    display: flex;
+    align-items: center;
+    gap: var(--gap)
+}
+.tabItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+}
+.tabItem.active {
+    background-color: var(--cl-primary);
+    color: var(--cl-white);
+}
+.orderTabList {
+    padding: 20px 0px;
+    width: 100%;
+}
+.orderTabList > table {
+    width: 100%;
+}
+.orderTabList > table tr {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.orderTabList > table thead tr {
+    background-color: var(--bg-primary-02);
+    border-radius: var(--br-radius);
+}
+.orderTabList > table tr th {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.orderTabList > table tr td {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    
+}
+.orderTabList > table tbody {
+    background: var(--cl-white);
+}
+.orderTabList > table tbody tr:nth-child(2n) {
+    border-radius: var(--br-radius);
+    background-color: var(--cl-third);
+}
+.processing span, .delivery span, .complete span {
+    padding: 8px 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--br-radius);
+}
+.processing span {
+    background-color: #ff87b154;
+    color: var(--cl-secondary)
+}
+.delivery span {
+    background-color: #80fec06b;
+    color: var(--cl-green)
+}
+.complete span {
+    background-color: #ffe1a654;
+    color: var(--cl-yellow  );
+}
+.viewDetailOrder {
+    cursor: pointer;
+    transition: var(--transition);
+}
+.viewDetailOrder:hover {
+    color: var(--cl-primary)
+}
+.orderViewWrapper {
+    position: fixed;
+    inset: 0;
+    background-color: var(--bg-opacity);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orderViewContent {
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+    width: 500px;
+    max-height: 80%;
+    height: 100%;
+    overflow-y: auto;
+}
+.orderViewTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cl-gray);
+}
+.orderViewTopContent {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+.orderViewTopContent span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.orderViewTopContent h3 {
+    font-weight: 600;
+    font-size: var(--fz-normal);
+}
+.orderViewClose{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--cl-gray);
+    cursor: pointer;
+}
+.orderViewClose svg {
+    font-size: var(--fz-large-xl);
+}
+.orderViewMain {
+    padding: var(--gap)
+}
+.orderViewMainInfor {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: var(--gap-x);
+}
+.orderViewMainInforItem {
+    max-width: 100%;
+}
+.orderViewMainInforItem h4 {
+    font-size: var(--fz-normal);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.orderViewMainInforItem > div {
+    margin-bottom: 15px;
+}
+.orderViewMainInforItem > div > span {
+    color: var(--cl-text);
+    font-size: var(--fz-base);
+}
+.orderInforCustomer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.orderViewInforNote {
+    font-weight: 500;
+}
+.orderViewProduct table {
+    border-collapse: collapse;
+}
+.orderViewProduct table tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr;
+    height: 40px;
+    border-radius: var(--br-radius);
+    overflow: hidden;
+}
+.orderViewProduct table tr th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color: var(--bg-primary-02);
+}
+.orderViewProduct table tbody tr {
+    min-height: 40px;
+    height: 100%;
+    padding: 5px 0px;
+}
+.orderViewProduct table tbody tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orderViewProduct table tbody tr td:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.orderViewProduct table tbody tr td h4 {
+    font-weight: 500;
+}

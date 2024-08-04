@@ -1,0 +1,402 @@
+/* header admin */
+.header {
+    width: calc(100% - 280px);
+    margin-left: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+    background-color: var(--cl-white);
+}
+.header.activeCollapse {
+    width: calc(100% - 80px);
+}
+
+.headerSearch {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 0px rgba(174, 174, 174, 0.15);
+    width: 360px;
+    height: 45px;
+    padding: 0px 65px 0px 15px;
+    position: relative;
+    background-color: var(--cl-white);
+}
+
+.headerSearch input {
+    color: var(--cl-black);
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.headerSearch input::placeholder {
+    font-size: var(--fz-base);
+    color: var(--cl-text);
+    font-weight: 500;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: calc(100% - 10px);
+    background-color: var(--cl-primary);
+    border-radius: 30px;
+    color: var(--cl-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerAccount {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.accountNotiIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #f7e5ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accountNotiIcon svg {
+    color: #d92550;
+    font-size: var(--fz-large);
+    animation: pulse_animation 1s linear infinite
+}
+
+@keyframes pulse_animation {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    40% {
+        transform: scale(1.21);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1.09);
+    }
+
+    80% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.accountNotiIcon:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d92550;
+}
+
+.accountUserContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.userImage {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.userIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5px;
+}
+
+.userIcon svg {
+    font-size: var(--fz-normal);
+}
+
+.userName {
+    font-size: var(--fz-base);
+    font-weight: 600;
+}
+
+.accountUser {
+    position: relative;
+}
+
+.accountUserDropdown {
+    position: absolute;
+    background-color: var(--bg-login-light);
+    color: var(--cl-white);
+    border-radius: 6px;
+    width: 200px;
+    top: 120%;
+    right: 0px;
+    font-size: var(--fz-small);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-height: 0px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.accountUserDropdown.active {
+    overflow: visible;
+}
+
+.accountUserDropdown:before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    right: 20px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid var(--bg-login-light);
+}
+
+.accountUserDropdownName {
+    padding: 8px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 40px;
+}
+
+.accountUserProfile {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    padding: 8px 20px;
+    min-height: 40px;
+}
+
+.accountUserProfile:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.accountUserProfile:hover {
+    background-color: var(--cl-primary);
+}
+
+/* sidebar */
+/* toggle menu admin */
+.sidebarTopIconMenu input {
+    display: none;
+}
+.toggleMenu {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    transition-duration: .5s;
+}
+
+.bars {
+    width: 100%;
+    height: 2px;
+    background-color: var(--cl-primary);
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+}
+
+#bar1 {
+    width: 50%;
+}
+
+#bar2 {
+    width: 75%;
+}
+
+.sidebarTopIconMenu input:checked+.toggleMenu .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+
+.sidebarTopIconMenu input:checked+.toggleMenu #bar2 {
+    transform: scaleX(0);
+    transition-duration: .1s;
+}
+
+.sidebarTopIconMenu input:checked+.toggleMenu #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+
+.sidebarTopIconMenu input:checked+.toggleMenu #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+
+.sidebarTopIconMenu input:checked+.toggleMenu {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+/*  */
+.sidebar {
+    max-width: 280px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cl-white);
+    box-shadow: 10px 10px 20px 0px rgba(218, 213, 213, 0.15);
+    transition: var(--transition);
+}
+.sidebar.activeCollapse {
+    max-width: 80px;
+}
+.sidebarTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 75px;
+    transition: var(--transition);
+    border-bottom: 1px solid var(--bg-primary-02);
+}
+.sidebarTopLogo.activeCollapse { 
+    max-width: 0px;
+    opacity: 0;
+}
+.sidebar.activeCollapse .sidebarTop {
+    padding: 0px;
+    justify-content: center;
+}
+
+.sidebarTopLogo {
+    width: 55px;
+    transition: var(--transition);
+}
+.sidebarMenu {
+    padding: 10px 10px;
+}
+.sidebarMenuItem {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    padding: 15px 20px;
+    gap: 10px;
+    transition: all 0.2s ease;
+    margin-bottom: 5px;
+}
+.sidebarMenuItem.activeMenu{
+    background-color: var(--cl-primary);
+    color: var(--cl-white);
+    border-radius: 50px;
+}
+.sidebarMenuItem:hover {
+    background-color: var(--cl-primary);
+    color: var(--cl-white);
+    border-radius: 50px;
+}
+.sidebar.activeCollapse .sidebarMenuItem {
+    justify-content: center;
+}
+.sidebarMenuItemIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebarMenuItemIcon svg {
+    font-size: var(--fz-large-xxl)
+}
+.sidebarMenuItemLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+}
+.sidebarMenuItemLabel.activeLabelCollapse {
+    display: none;
+}
+/* .sidebarMenuItemLabel.activeLabelCollapse {
+    position: absolute;
+    left: 100%;
+    min-width: 200px;
+    padding: 15px 20px;
+    background-color: var(--cl-white);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: var(--transition);
+    visibility: hidden;
+    box-shadow: 10px 10px 20px 0px rgba(218, 213, 213, 0.15);
+    color:var(--cl-black);
+} */
+/* .sidebar.activeCollapse .sidebarMenuItem:hover .sidebarMenuItemLabel.activeLabelCollapse, .sidebarMenuItem.activeMenu .sidebarMenuItemLabel.activeLabelCollapse {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+} */
+/* .sidebarMenuItemLabel.activeLabelCollapse:hover {
+    color: var(--cl-primary)
+} */
+.sidebarMenuItemLabel svg {
+    color: var(--cl-text);
+    transform: rotate(-90deg);
+    font-size: var(--fz-normal);
+    transition: var(--transition);
+}
+.sidebarMenuItemLabel.activeDropdown svg {
+    transform: rotate(0deg);
+    
+}
+
+

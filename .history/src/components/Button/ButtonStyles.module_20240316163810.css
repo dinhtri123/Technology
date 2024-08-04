@@ -1,0 +1,53 @@
+.button {
+    width: 100%;
+    height: 45px;
+    background: var(--cl-primary);
+    color: var(--cl-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--br-radius);
+    font-family: var(--font-primary);
+    font-size: var(--fz-normal);
+    cursor: pointer;
+    transition: var(--transition);
+    transform: scale(1);
+    overflow: hidden;
+    font-weight: 600;
+}
+.button:hover {
+    transform: scale(1.03);
+    background-color: #2252D1;
+}
+.btnText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-sm);
+    transition: var(--transition);
+}
+.button:hover .btnText {
+    transform: translateY(-100%);
+}
+.btnHover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-sm);
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+.button:hover .btnHover {
+    transform: translateY(0%);
+}
+@media screen and (max-width: 768px) {
+    .button {
+        height: 40px;
+        font-size: var(--fz-normal);
+    } 
+}

@@ -1,0 +1,89 @@
+.productFlashSale {
+    padding: 30px 0px;
+}
+.productFlashSaleContent {
+    overflow: hidden;
+    padding-top: 100px;
+    margin-top: -79px;
+}
+.productFlashSaleTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-x);
+    padding-right: 130px;
+}
+.productFlashSaleImage {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 300px;
+} 
+.productFlashSaleImage img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.countdownTime {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: center;
+}
+.countdownTime span:first-child {
+    color: var(--cl-black);
+    font-weight: 500;
+}
+.countdownTime span:first-child b {
+    color: var(--cl-red);
+    font-size: var(--fz-large-x);
+}
+.countdownTime span:not(:first-child) {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--br-radius);
+    background-color: var(--cl-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--cl-white);
+    font-weight: 600;
+
+}
+.btnProductSale {
+    margin: var(--gap-xl) auto 0px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .countdownTime>div {
+        width: 60px;
+        height: 60px;
+        gap: 0px;
+    }
+
+    .countdownTime>div>span,
+    .countdownTime div>span:first-child {
+        font-size: var(--fz-large)
+    }
+    .productFlashSaleContent {
+        padding-top: 20px;
+        margin: 0px;
+    }
+    .productFlashSaleTop {
+        padding: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .countdownTime span:not(:first-child) {
+        width: 40px;
+        height: 40px;
+    }
+    .countdownTime span:first-child {
+        padding-right: 10px;
+    }
+}

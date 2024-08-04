@@ -1,0 +1,25 @@
+.input {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.input > label {
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 130px;
+}
+.input > input {
+    background-color: var(--cl-white);
+    padding: 5px 15px;
+    border-radius: var(--br-radius);
+    height: 40px;
+    min-width: 300px;
+    width: 100%;
+    flex: 1;
+    border: 1px solid var(--cl-gray);
+    font-size: var(--fz-normal);
+    border: 2px solid transparent
+}
+.input > input:focus {
+    border: 2px solid var(--cl-text)
+}

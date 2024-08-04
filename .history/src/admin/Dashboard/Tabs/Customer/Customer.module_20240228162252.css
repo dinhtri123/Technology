@@ -1,0 +1,208 @@
+.customer h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.customerList {
+    margin-top: var(--gap-x);
+}
+.customerList > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.customerList > table tr {
+    min-height: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 1fr;
+}
+.customerList > table thead tr {
+   background-color: var(--bg-primary-02);
+   border-radius: var(--br-radius);
+}
+.customerList > table thead tr th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.customerList > table thead tr th:first-child {
+    justify-content: flex-start;
+}
+.customerList > table tbody {
+    background-color: var(--cl-white);
+}
+.customerList > table tbody tr:nth-child(2n) {
+    background-color: var(--cl-gray);
+    border-radius: var(--br-radius);
+}
+.customerList > table tbody tr td {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customerList > table tbody tr td:first-child {
+    justify-content: flex-start;
+    gap: 5px;
+}
+.userImage {
+    width: 40px;
+    height: 40px;
+}
+.viewCustomerDetail {
+    cursor: pointer;
+    transition: var(--transition);
+}
+.viewCustomerDetail:hover {
+    color: var(--cl-primary)
+}
+.popupDetail {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+.popupWrapper {
+    max-width: 500px;
+    max-height: 80%;
+    width: 100%;
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+    overflow-y: auto;
+}
+.popupDetailTitle {
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid var(--cl-gray);
+}
+.popupDetailTitle h3 {
+    font-weight: 600;
+    font-size: var(--fz-large);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.popupViewClose {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid var(--cl-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.popupViewClose:hover {
+    background-color: var(--cl-primary);
+    border-right: 1px solid var(--cl-primary);
+    color: var(--cl-white)
+}
+.popupContent {
+    padding: var(--gap-x);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap)
+}
+.inforItem b {
+    font-weight: 600;
+}
+.inforItem:last-child, .inforItem:nth-child(5) {
+    grid-column: span 2;
+}
+.popupWrapper > h4 {
+    font-weight: 600;
+    font-size: var(--fz-large);
+    text-align: center;
+}
+.inforOrder {
+    padding: var(--gap-x)
+}
+.inforOrderItemTitle {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-x);
+    border-radius: var(--br-radius);
+    border: 1px solid var(--cl-gray);
+    cursor: pointer;
+}
+.inforOrderItemTitle span:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inforOrderItemContent {
+    margin-top: 5px;
+    max-height: 0px;
+    overflow: hidden;
+}
+.inforOrderItemContent table tr {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    min-height: 40px;
+    border-radius: var(--br-radius);
+}
+.inforOrderItemContent table thead tr {
+    background-color: var(--bg-primary-02);
+}
+.inforOrderItemContent table thead tr th {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+.inforOrderItemContent table thead tr th:first-child {
+    justify-content: flex-start;
+}
+.inforOrderItemContent table tbody tr td {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inforOrderItemContent table tbody tr:nth-child(2n) {
+    background-color: var(--cl-gray);
+    border-radius: var(--br-radius);
+}
+.inforOrderItemContent table tbody tr td {
+    font-size: 14px;
+}
+.inforOrderItemContent table tbody tr td h4{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.inforOrderItemContent table tbody tr td:nth-child(1) {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inforOrderItemContent table tbody tr td:nth-child(1) b {
+    font-size: 14px;
+    font-weight: 500;
+}
+.inforOrderItemContent table tbody tr td:nth-child(1) .option {
+    display: flex;
+    gap: 5px;
+}
+.inforOrderItemContent table tbody tr td:nth-child(1) .option span {
+    display: flex;
+    gap: 5px;
+}

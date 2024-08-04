@@ -1,0 +1,53 @@
+.order h2 {
+    font-size: var(--fz-large-xxl);
+    color: var(--cl-black);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.orderTab {
+    display: flex;
+    align-items: center;
+    gap: var(--gap)
+}
+.tabItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: var(--cl-white);
+    border-radius: var(--br-radius);
+}
+.tabItem.active {
+    background-color: var(--cl-primary);
+    color: var(--cl-white);
+}
+.orderTabList {
+    padding: 20px 0px;
+    width: 100%;
+}
+.orderTabList table {
+    width: 100%;
+}
+.orderTabList table tr {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.orderTabList table thead tr {
+    background-color: var(--bg-input);
+}
+.orderTabList table tr th {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orderTabList table tr td {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,136 @@
+.login {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 100;
+    visibility: hidden;
+}
+.login.active {
+    opacity: 1;
+    visibility: visible;
+}
+.loginWrapper {
+    max-width: 420px;
+    width: 100%;
+    height: fit-content;
+    background: var(--cl-white);
+    padding: 20px 20px 65px;
+    border-radius: var(--br-radius-x);
+    transform: translateY(-100px);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-x);
+    position: relative;
+    overflow: hidden
+}
+.login.active .loginWrapper {
+    transform: translateY(0px);
+}
+.loginTitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--fz-large-x);
+}
+.LoginBtnClose {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginBtnClose > svg {
+    font-size: var(--fz-large-xl);
+    transition: var(--transition);
+    cursor: pointer;
+}
+.LoginBtnClose:hover {
+    animation: zoom 0.5s ease;
+    color: var(--cl-primary)
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-x);
+}
+
+.loginForgetPass  {
+    color: var(--cl-primary);
+    text-align: left;
+    cursor: pointer;
+}
+
+.loginSocial {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+.loginTextOr {
+    text-align: center;
+    flex: 1 1 100%;
+}
+.loginSocialBtn {
+    width: 100%;
+    display: flex;
+    gap: var(--gap);
+}
+.loginSocialItem {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-radius: var(--br-radius);
+    border: 2px solid var(--bg-input);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.loginSocialItem:hover {
+    border-color: var(--cl-primary);
+}
+.logintoCreate {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-input);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.logintoCreate span {
+    color: var(--cl-secondary);
+    cursor: pointer;
+}
+
+@media screen  and (max-width: 568px) {
+    .loginWrapper {
+        width: 90%;
+    }
+    .logintoCreate {
+        height: 40px;
+    }
+    .loginTitle {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,382 @@
+{
+  "addToCart": [
+    {
+      "id": 1,
+      "title": "Điện thoại Samsung Galaxy Z Flip5 5G 512GB",
+      "image": "./public/ss_pro.png",
+      "sku": "230900721",
+      "option": "Blue Titanium, 256GB",
+      "priceNew": "20.690.000 đ",
+      "priceOld": "25.690.000 đ",
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "title": "Tai nghe Bluetooth chụp tai Sony WH-CH520",
+      "image": "./public/ss_pro.png",
+      "sku": "230900721",
+      "option": "Trắng, Bluetooth",
+      "priceNew": "14.690.000 đ",
+      "priceOld": "15.690.000 đ",
+      "quantity": 2
+    }
+  ],
+  "categogy": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "path": "/laptop"
+    },
+    {
+      "id": 2,
+      "title": "Điện thoại",
+      "path": "/dienthoai"
+    },
+    {
+      "id": 3,
+      "title": "Tai nghe",
+      "path": "/tainghe"
+    },
+    {
+      "id": 4,
+      "title": "Phụ kiện",
+      "path": "/phukien"
+    }
+  ],
+  "product": [
+    {
+      "idProduct": 1,
+      "title": "Tai nghe Bluetooth Chụp Tai JBL T500",
+      "category": "Laptop",
+      "thumbnail": "./public/ss_pro.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 3690000,
+      "priceNew": 1190000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": true
+    },
+    {
+      "idProduct": 2,
+      "title": "Laptop Legion 5 Pro 512GB",
+      "category": "Laptop",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 2990000,
+      "priceNew": 1790000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    },
+    {
+      "idProduct": 3,
+      "title": "iPhone 15 Promax",
+      "category": "Laptop",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 1990000,
+      "priceNew": 1390000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": true
+    },
+    {
+      "idProduct": 4,
+      "title": "Laptop Dell Vostro 15",
+      "category": "Laptop",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 4990000,
+      "priceNew": 2690000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": true
+    },
+    {
+      "idProduct": 5,
+      "title": "Headphone Asus",
+      "category": "Laptop",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 3990000,
+      "priceNew": 2690000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": true
+    },
+    {
+      "idProduct": 6,
+      "title": "Xiaomi 14 Pro",
+      "category": "Điện thoại",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 6990000,
+      "priceNew": 4690000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": true
+    },
+    {
+      "idProduct": 7,
+      "title": "Tai nghe có dây Addias",
+      "category": "Tai nghe",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 2990000,
+      "priceNew": 1990000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": true
+    },
+    {
+      "idProduct": 8,
+      "title": "Sạc nhanh 120W Xiaomi",
+      "category": "Phụ kiện",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 1990000,
+      "priceNew": 1890000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    },
+    {
+      "idProduct": 9,
+      "title": "Laptop Apple MacBook Air 13 inch M2",
+      "category": "Phụ kiện",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 3990000,
+      "priceNew": 2290000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    },
+    {
+      "idProduct": 10,
+      "title": "Điện thoại OPPO Reno8 T",
+      "category": "Phụ kiện",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 3990000,
+      "priceNew": 2090000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    },
+    {
+      "idProduct": 11,
+      "title": "Đồng hồ BABY-G 39 mm Nữ BGA-100ST-4ADR",
+      "category": "Phụ kiện",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 4990000,
+      "priceNew": 3690000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    },
+    {
+      "idProduct": 12,
+      "title": "Loa Bluetooth Rezo Home Series One",
+      "category": "Phụ kiện",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 990000,
+      "priceNew": 690000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    },
+    {
+      "idProduct": 13,
+      "title": "Micro không dây Monster M98",
+      "category": "Phụ kiện",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 8990000,
+      "priceNew": 6690000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    },
+    {
+      "idProduct": 14,
+      "title": "Loa Bluetooth Rezo Pulse E20",
+      "category": "Phụ kiện",
+      "thumbnail": "../../../public/headphone1.png",
+      "detail": "Tai nghe Bluetooth Chụp Tai Zadez GP-803B với thiết kế trẻ trung, gấp gọn dễ dàng mang đi bất cứ đâu, chất liệu cao cấp và bền bỉ",
+      "review": 60,
+      "inStock": 20,
+      "priceOld": 3990000,
+      "priceNew": 3290000,
+      "image": [
+        "../../../public/headphone1.png",
+        "../../../public/headphone2.jpg",
+        "../../../public/headphone3.jpg",
+        "../../../public/headphone4.jpg",
+        "../../../public/headphone5.jpg",
+        "../../../public/headphone6.jpg"
+      ],
+      "wishlist": false
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "thumbnail": "../../../public/news.png",
+      "time": "18 - Tháng 10 - 2023",
+      "review": 20,
+      "title": "Đánh giá Galaxy S23: Thiết kế nhỏ gọn, sang trọng, hiệu năng mạnh mẽ, camera chụp ảnh đẹp mắt",
+      "detail": "Trong năm 2023, Galaxy S23 Series chính là một trong những dòng sản phẩm nhận được nhiều lời khen nhất từ phía người dùng lẫn các chuyên gia công nghệ...."
+    },
+    {
+      "id": 2,
+      "thumbnail": "../../../public/news.png",
+      "time": "18 - Tháng 10 - 2023",
+      "review": 20,
+      "title": "Đánh giá Galaxy S23: Thiết kế nhỏ gọn, sang trọng, hiệu năng mạnh mẽ, camera chụp ảnh đẹp mắt",
+      "detail": "Trong năm 2023, Galaxy S23 Series chính là một trong những dòng sản phẩm nhận được nhiều lời khen nhất từ phía người dùng lẫn các chuyên gia công nghệ...."
+    },
+    {
+      "id": 3,
+      "thumbnail": "../../../public/news.png",
+      "time": "18 - Tháng 10 - 2023",
+      "review": 20,
+      "title": "Đánh giá Galaxy S23: Thiết kế nhỏ gọn, sang trọng, hiệu năng mạnh mẽ, camera chụp ảnh đẹp mắt",
+      "detail": "Trong năm 2023, Galaxy S23 Series chính là một trong những dòng sản phẩm nhận được nhiều lời khen nhất từ phía người dùng lẫn các chuyên gia công nghệ...."
+    },
+    {
+      "id": 4,
+      "thumbnail": "../../../public/news.png",
+      "time": "18 - Tháng 10 - 2023",
+      "review": 20,
+      "title": "Đánh giá Galaxy S23: Thiết kế nhỏ gọn, sang trọng, hiệu năng mạnh mẽ, camera chụp ảnh đẹp mắt",
+      "detail": "Trong năm 2023, Galaxy S23 Series chính là một trong những dòng sản phẩm nhận được nhiều lời khen nhất từ phía người dùng lẫn các chuyên gia công nghệ...."
+    }
+  ],
+  "order": [
+    {
+      "id": 1,
+      "date": "22-10-2023",
+      "status": "Đang xử lý",
+      "total": 12999000
+    },
+    {
+      "id": 2,
+      "date": "22-10-2023",
+      "status": "Đã giao",
+      "total": 12999000
+    },
+    {
+      "id": 3,
+      "date": "22-10-2023",
+      "status": "Chưa xử lý",
+      "total": 12999000
+    }
+  ]
+}
